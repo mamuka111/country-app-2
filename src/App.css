@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.495);
+  background-color: #ffffff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerDiv {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
   display: flex;
-  flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 900px;
+}
+.title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #111517;
+}
+.modeDiv {
+  width: 108px;
+  height: 22px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  display: flex;
+    align-items: center;
+}
+.modeDiv:hover {
+  cursor: pointer;
+}
+.modeText {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111517;
+}
+.moonImg {
+  width: 15px;
+  height: 13px;
+}
+.searchDiv{
+    width: 46%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.603);border-radius: 5px;
+border-radius: 5px;
+}
+.search{
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+.search:focus {
+    outline: none;
+  }
+.section{
+    display: flex;
+    align-items: center;
+        height: 160px;
+        width: 100%;
+        justify-content: space-around;
+        gap: 360px;
+}
+.select{
+    width: 13.8%;
+    height: 56px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.603);border-radius: 5px;
+border-radius: 5px;
+}
+.select:focus{
+    outline: none;
+}
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 264px;
+    height: 336px;
+    
+}
+.container{
+    width: 264px;
+    height: 336px;
+    background: #FFFFFF;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.603);border-radius: 5px;
+margin: 50px;
+}
+.imgs{
+    width: 264px;
+    height: 160px;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+}
+.mainDiv{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+.mainContainer{
+    margin: 0 auto;
+    background-color:#ffffff;
+    height: 100vh;
+}
+h4{
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+
+color: #111517;
+}
+.h4tags{
+    display: flex;
+    height: 100px;
+    width: 267px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.countryNames{
+height: 26px;
+color: black;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height, or 144% */
+margin-left: 20px;
+margin-top: 15px;
+
+color: #111517;
+}
+h3{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+}
+.bigImg{
+width: 80%;
+border-radius: 3%;
+box-shadow: 0 0 7px 2px rgba(0,0,0,.279);
+}
+.backDiv{
+  width: 15%;
+  height: 40px;
+  background-color: #ffffff;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+    display: flex;
+  border-radius: 7%;
+  margin-left: -350px;
+  margin-top: 50px;
+}
+.backDiv:hover{
+  cursor: pointer;
+}
+.nextCard{
+  /* max-width: 1440px; */
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+.nextCardLeft{
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.nextCardRigth{
+  width: 80%;
+height: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+gap:150px ;
+}
+.backDivChild{
+  width: 136px;
+  height: 40px;
+}
+.backButton{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.arrow{
+  background: none;
+  width: 13.3px;
+  height: 13.3px;
+}
+.textContainer{
+  width: 95%;
+  height:40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.empty{
+  height: 40px;
+  width: 136px;
+  
+}
+.mainInformation{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.secondInformation{
+  display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.topH{
+margin-top: -20px;
+}
+.h{
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+color: #111517;
+
+}
+.h2{
+  display: inline-block;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: #111517c8;
+}
+.borderCountries{
+  width: 90%;
+  background-color:red ;
+  margin-top: -100px;
+
+}
+.dark-mode{
+  background-color: #2B3844;
+}
+.dark-mode-title{
+  color: #FFFFFF;
+}
+.dark-mode-text{
+  color: #FFFFFF;
+}
+.dark-mode-div{
+  background-color:#2B3844;;
+}
+.dark-mode-container{
+  background-color: #202C36;
+}
+.ragac{
+  display: flex;
+}
+.dark-mode-card{
+  background-color: #2B3844;;
+}
+.dark-mode-card{
+  color: #FFFFFF;
+}
+.dark-mode-search{
+  background-color: #2B3844;
+  color: #FFFFFF;
+}
+.light-mode-search::placeholder {
+  color: gray;
+}
+
+.dark-mode-search::placeholder {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dark-mode-h1{
+color: #FFFFFF;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode-main{
+  background-color: #202C36;
+}
+.dark-mode-section{
+  background-color: #202C36;
+}
+.dark-mode-nextCard{
+background-color: #202C36;
 }
