@@ -54,7 +54,7 @@ function App() {
         <Routes>
           <Route path='/:countryId' element={<CountryDetails isDarkMode={isDarkMode}  data={data}/>}/>
         <Route  path='/' element={<MainPage isDarkMode={isDarkMode}  data={data} onChange={onChange} searchChange={searchChange} searched={searched} filteredData={filteredData} fetched={fetched}  /> }/>
-      
+      {/* asdasdasdasdasdsa */}
         </Routes>
         </BrowserRouter>
       </div>
